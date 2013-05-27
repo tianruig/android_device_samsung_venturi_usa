@@ -94,8 +94,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	power.s5pc110 \
 	hwcomposer.s5pc110 \
-	camera.aries \
-	audio.primary.aries \
+	camera.5pc110 \
+	audio.primary.5pc110 \
 	audio.a2dp.default \
 	audio.usb.default \
 	libs3cjpeg
