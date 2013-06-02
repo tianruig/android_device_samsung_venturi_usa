@@ -11,10 +11,10 @@ In order to build CM-10.1 for this device, sync the entire CyanogenMod repo (ins
 ```bash
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="JackpotClavin/android_device_samsung_venturi_usa" path="device/samsung/venturi_usa" remote="github" />
-  <project name="JackpotClavin/android_vendor_samsung_venturi_usa" path="vendor/samsung/venturi_usa" remote="github" />
-  <project name="JackpotClavin/android_kernel_samsung_venturi" path="kernel/samsung/venturi" remote="github" />
-  <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" />
+  <project name="JackpotClavin/android_device_samsung_venturi_usa" path="device/samsung/venturi_usa" remote="github" revision="cm-10.1" />
+  <project name="JackpotClavin/android_vendor_samsung_venturi_usa" path="vendor/samsung/venturi_usa" remote="github" revision="cm-10.1" />
+  <project name="JackpotClavin/android_kernel_samsung_venturi" path="kernel/samsung/venturi" remote="github" revision="3.0Venturi" />
+  <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" revision="cm-10.1" />
 </manifest>
 ```
 
@@ -25,8 +25,14 @@ The after syncing the entire CyanogenMod source tree and the Venturi files, type
 ```bash
 . build/envsetup.sh
 ```
+then type:
+
+```bash
+. vendor/cm/get-prebuilts 
+```
 
 and then the build command is:
+
 ```bash
 brunch venturi_usa
 ```
