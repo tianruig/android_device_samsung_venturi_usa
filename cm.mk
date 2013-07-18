@@ -1,17 +1,13 @@
-## Specify phone tech before including full_phone
-#$(call inherit-product, vendor/cm/config/gsm.mk)
-
 # Release name
 PRODUCT_RELEASE_NAME := GalaxyPlayer5
 
 # Inherit some common CM stuff.
-#$(call inherit-product, vendor/cm/config/common_full_phone.mk)
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/cm/config/common_mini_tablet_wifionly.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/venturi_usa/full_venturi_usa.mk)
 
-## Device identifier. This must come after all inclusions
+# Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := venturi_usa
 PRODUCT_NAME := cm_venturi_usa
 PRODUCT_BRAND := Samsung
