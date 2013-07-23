@@ -44,7 +44,7 @@ ARCH_ARM_HIGH_OPTIMIZATION_COMPAT := true
 
 # Kernel Source
 TARGET_KERNEL_SOURCE := kernel/samsung/venturi
-TARGET_KERNEL_CONFIG := galaxyplayer5_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_venturi_defconfig
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/venturi_usa
